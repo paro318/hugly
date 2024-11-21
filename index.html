@@ -261,6 +261,7 @@
         gap: 1rem;
         justify-content: center;
         align-items: center;
+position: relative;
       }
       .about h2 {
         font-size: 2rem;
@@ -274,6 +275,14 @@
       .container {
         width: 100%;
         padding: 10px;
+      }
+
+      .about-image{
+position: absolute;
+top: 0;
+right: 0;
+z-index: 10;
+translate: 50% -50%;
       }
 
       @media (max-width: 768px) {
@@ -313,6 +322,13 @@
         .economics div{
           width: 50vw;
           height: 50vw;
+        }
+        .about{
+          padding-top: 8rem;
+          margin-top: 8rem;
+        }
+        .about-image{
+          right: 50%;
         }
       }
 
@@ -411,13 +427,17 @@
     <section class="about-section slide-up" id="about">
     
       <div class="about">
+        <img
+src="/1.jpeg"
+alt="MustacheDAWG"
+class="image-content floating-image shaking-image about-image"
+style="animation-delay: 200ms"
+/>
         <div class="texts shaking-image floating-image">
           <h2>About Pink Panther</h2>
 
           <p>
-            Once revered as a symbol of elegance and mystery, Pink Panther now enters the blockchain realm, embodying innovation, resilience, and charm. This majestic token blends the allure of its legendary namesake with cutting-edge decentralized technology, creating a space for investors, enthusiasts, and dreamers alike.
-
-Born from a vision to dominate the memecoin landscape, Pink Panther isn’t just a token; it’s a movement. With zero taxes, rug-free guarantees, and a community-driven approach, we’re rewriting the rules of blockchain investment.
+            Once revered as a symbol of elegance and mystery, Pink Panther now enters the blockchain realm, embodying innovation, resilience, and charm. This majestic token blends the allure of its legendary namesake with cutting-edge decentralized technology, creating a space for investors, enthusiasts, and dreamers alike. Born from a vision to dominate the memecoin landscape, Pink Panther isn’t just a token; it’s a movement. With zero taxes, rug-free guarantees, and a community-driven approach, we’re rewriting the rules of blockchain investment.
 
           </p>
           <p>
